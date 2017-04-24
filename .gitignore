@@ -4,3 +4,6 @@ build-home/ccachebuildroot/
 build-home/configs/merged_defconfig
 build-home/output/
 build-home/buildroot/
+
+containers/*/Dockerfile
+containers/*/rootfs.tar.gz
