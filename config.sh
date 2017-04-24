@@ -1,2 +1,2 @@
-MINIC_BUILDER_IMAGE="minic"
+MINIC_BUILDER_IMAGE="cdxvirt/minic"
 MINIC_BUILDER_IMAGE_TAG="latest"
