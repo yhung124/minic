@@ -1,5 +1,0 @@
-# Add the container images you need to here
-CONTAINER_LIST=(
-etcd
-flannel
-)
