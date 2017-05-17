@@ -8,7 +8,7 @@ CONFIG_MERGE_TOOL=${ROOT}/merge-config.sh
 OUTPUT=${ROOT}/output
 EXTERNAL=${ROOT}
 CONFIG=merged_defconfig
-CONTAINER_CONFIGS=$(cd ${ROOT}/configs && ls *_defconfig|grep -v merged)
+CONTAINER_CONFIGS=$(cd ${ROOT}/configs && ls *_defconfig|grep -v merged|grep -v template)
 CONFIG_LIST=
 
 POST_BUILD_SCRIPTS=
