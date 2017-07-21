@@ -2,7 +2,7 @@ FROM ubuntu:14.04.4
 MAINTAINER Raymond, yhung124@gmail.com
 
 ENV BUILDROOT_GIT_URL="https://github.com/buildroot/buildroot.git"
-ENV BUILDROOT_TAG="2017.02.1"
+ENV BUILDROOT_TAG="2017.05.1"
 
 # Install essential packages
 COPY script/sources.list /etc/apt/sources.list

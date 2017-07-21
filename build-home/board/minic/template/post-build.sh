@@ -1,1 +1,0 @@
-../common/post-build.sh
