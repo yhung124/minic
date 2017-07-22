@@ -1,8 +1,6 @@
 build-home/.bash_history
 build-home/.buildroot-ccache/
-build-home/configs/merged_defconfig
-build-home/output/
 build-home/buildroot/
 build-home/.viminfo
 
-containers/
+minic-container/
