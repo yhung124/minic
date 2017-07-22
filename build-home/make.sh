@@ -3,12 +3,12 @@ set -e
 ROOT=$(dirname $(readlink -f "$0"))
 
 BUILDROOT_PATH=${ROOT}/buildroot
-BUILDROOT_EXT_CONFIG_PATH=${ROOT}/containers/configs
+BUILDROOT_EXT_CONFIG_PATH=${ROOT}/minic-container/configs
 CONFIG_MERGE_TOOL=${ROOT}/merge-config.sh
-OUTPUT=${ROOT}/output
+OUTPUT=${ROOT}/minic-container/output
 EXTERNAL=${ROOT}
 CONFIG=merged_defconfig
-CONTAINER_CONFIGS=$(cd ${ROOT}/containers/configs && ls *_defconfig|grep -v merged|grep -v template)
+CONTAINER_CONFIGS=$(cd ${ROOT}/minic-container/configs && ls *_defconfig|grep -v merged|grep -v template)
 CONFIG_LIST=
 
 POST_BUILD_SCRIPTS=
