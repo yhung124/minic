@@ -6,4 +6,4 @@ if ! docker images | grep ${MINIC_BUILDER_IMAGE} | grep ${MINIC_BUILDER_IMAGE_TA
   docker build -t ${MINIC_BUILDER_IMAGE}:${MINIC_BUILDER_IMAGE_TAG} .
 fi
 
-docker run -it -v ${ROOT}/build-home:/home/build -v ${ROOT}/minic-container:/home/build/minic-container ${MINIC_BUILDER_IMAGE}:${MINIC_BUILDER_IMAGE_TAG} /home/build/make.sh
+docker run -it -v ${ROOT}/build-home:/home/build -v ${ROOT}/minic-container:/home/build/minic-container ${MINIC_BUILDER_IMAGE}:${MINIC_BUILDER_IMAGE_TAG} /home/build/make.sh $@
